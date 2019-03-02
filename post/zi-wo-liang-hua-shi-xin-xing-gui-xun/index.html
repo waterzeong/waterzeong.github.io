@@ -1,100 +1,127 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>自我量化是新型规训 | fuckfomo</title>
+    <meta charset="utf-8" >
+
+<title>自我量化是新型规训 | FUCKFOMO</title>
+<meta name="description" content="使用而非占有 断章而不取义">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="https://waterzeong.github.io//favicon.ico">
 <link rel="stylesheet" href="https://waterzeong.github.io//styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://waterzeong.github.io/">
-  <img class="avatar" src="https://waterzeong.github.io//images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    fuckfomo
-  </h1>
-  <p class="site-description">
-    zeong
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://waterzeong.github.io/">
+        <img src="https://waterzeong.github.io//images/avatar.png" class="site-logo">
+        <h1 class="site-title">FUCKFOMO</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      使用而非占有 断章而不取义
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              自我量化是新型规训
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-03-01 ·
-              </time>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">自我量化是新型规训</h2>
+            <div class="post-date">2019-03-01</div>
+            
             <div class="post-content">
               <p>排行榜是全景监视<br>逃避孤独上交隐私<br>物化产品失去兽性<br>权力毛细反抗虚弱<br>大概扯淡吹嘘泡沫<br>数据隔离购买身份<br>了解社会制造自我<br>工具膨胀理性失衡<br>消费体制扼杀希望<br>唯恐无聊缠上身<br>关机 暂停<br>行可以改善之事<br>为公共利益发声</p>
 
             </div>
-          </article>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://waterzeong.github.io//post/hello-hve-notes">
+                  <h3 class="post-title">
+                    Hello Hve Notes
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://waterzeong.github.io//post/hello-hve-notes">
-              <h3 class="post-title">
-                Hello Hve Notes
-              </h3>
-            </a>
-          </div>  
-        
-
-        
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>
